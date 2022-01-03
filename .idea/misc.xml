@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_iniciarsesion.xml" value="0.25" />
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_login.xml" value="0.15598290598290598" />
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_main.xml" value="0.12021857923497267" />
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_registrar.xml" value="0.25" />
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_registro.xml" value="0.21" />
         <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1125" />
       </map>
     </option>
@@ -12,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12807377049180327" />
+      </ProjectState>
+    </option>
   </component>
 </project>

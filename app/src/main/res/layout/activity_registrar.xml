@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarActivity">
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="761dp"
+        android:background="@drawable/crearcuentascreen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutNombre"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:translationY="260dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Nombre"
+                android:textColor="#896F6F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textEmailAddress"
+                android:textColor="#896F6F" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:translationY="280dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Correo"
+                android:textColor="#896F6F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/correoUsuario1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textEmailAddress"
+                android:textColor="#896F6F" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:translationY="300dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:text="Contraseña"
+                android:textColor="#896F6F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/contrasena1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#896F6F" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:translationY="315dp">
+
+            <ImageButton
+                android:id="@+id/IngresarPantalla"
+                android:layout_width="111dp"
+                android:layout_height="101dp"
+                android:onClick="crearCuenta"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:translationX="300dp"
+                app:srcCompat="@drawable/img" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

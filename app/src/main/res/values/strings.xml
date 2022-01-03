@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WomanCare</string>
+    <string name="btn_iniciarsesion_pantalla">Iniciar Sesión</string>
+    <string name="btn_registrar_pantalla">Registrar</string>
 </resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IniciarSesionActivity">
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="761dp"
+        android:background="@drawable/loginscreen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/layoutCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:translationY="280dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Correo"
+                android:textColor="#896F6F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/correoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textEmailAddress"
+                android:textColor="#896F6F" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:translationY="300dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:text="Contraseña"
+                android:textColor="#896F6F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#896F6F" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:translationY="310dp">
+
+            <ImageButton
+                android:id="@+id/ingresar"
+                android:layout_width="108dp"
+                android:layout_height="104dp"
+                android:layout_gravity="right"
+                android:onClick="irIniciar"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                app:srcCompat="@drawable/img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="vertical"
+            android:translationY="330dp">
+
+            <Button
+                android:id="@+id/omcPantalla"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:text="Olvidé mi contraseña"
+                android:textColor="#896F6F"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="vertical"
+            android:translationY="330dp">
+
+            <Button
+                android:id="@+id/registrarPanatalla"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:onClick="irRegistrarse"
+                android:text="Registrarse"
+                android:textColor="#896F6F"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

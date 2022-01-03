@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1089463785065",
+    "project_id": "womancare-a0b5b",
+    "storage_bucket": "womancare-a0b5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089463785065:android:96c36e395dbc0735be34f8",
+        "android_client_info": {
+          "package_name": "Aplimovil.womancare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089463785065-mqc5ocs0n7c3a9hg2smmsimi040r96g4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdCD5hAoqKmBaFlrWd1XY0lhQTEhi0_To"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089463785065-mqc5ocs0n7c3a9hg2smmsimi040r96g4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
