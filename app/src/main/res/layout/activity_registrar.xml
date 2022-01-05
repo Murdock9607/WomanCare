@@ -17,11 +17,29 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/atrasLayout"
+            android:layout_width="75dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            android:translationX="5dp"
+            android:translationY="8dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="atras"
+                android:text="Button"
+                android:textColor="#00FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/layoutNombre"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:orientation="vertical"
-            android:translationY="260dp">
+            android:translationY="200dp">
 
             <TextView
                 android:id="@+id/textView3"
@@ -49,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:orientation="vertical"
-            android:translationY="280dp">
+            android:translationY="220dp">
 
             <TextView
                 android:id="@+id/textView"
@@ -77,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:orientation="vertical"
-            android:translationY="300dp">
+            android:translationY="240dp">
 
             <TextView
                 android:id="@+id/textView2"
@@ -106,7 +124,7 @@
             android:layout_height="89dp"
             android:layout_gravity="center"
             android:orientation="vertical"
-            android:translationY="315dp">
+            android:translationY="295dp">
 
             <ImageButton
                 android:id="@+id/IngresarPantalla"

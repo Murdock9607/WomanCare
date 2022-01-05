@@ -1,12 +1,12 @@
 package Aplimovil.womancare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -59,5 +59,7 @@ public class RegistrarActivity extends AppCompatActivity {
                     // ...
                 });
     }
-
+    public void atras (View view){
+        onBackPressed();
+    }
 }

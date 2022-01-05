@@ -6,4 +6,85 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <LinearLayout
+        android:id="@+id/backgroundLayout"
+        android:layout_width="391dp"
+        android:layout_height="761dp"
+        android:background="@drawable/homescreen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/superiorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/atrasLayout"
+                android:layout_width="85dp"
+                android:layout_height="94dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/atrasbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="atras" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="220dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/menuLayout"
+                android:layout_width="85dp"
+                android:layout_height="94dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/menuspiner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/menu"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="79dp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="328dp"
+                android:layout_height="256dp"
+                android:backgroundTint="#00FFFFFF"
+                android:drawableTint="#00FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="328dp"
+                android:layout_height="248dp"
+                android:backgroundTint="#00FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
