@@ -31,6 +31,7 @@
 
                 <Button
                     android:id="@+id/atrasbtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:backgroundTint="#00FFFFFF"
@@ -70,6 +71,7 @@
 
             <Button
                 android:id="@+id/button7"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="328dp"
                 android:layout_height="256dp"
                 android:backgroundTint="#00FFFFFF"
@@ -81,10 +83,15 @@
 
             <Button
                 android:id="@+id/button6"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="328dp"
                 android:layout_height="248dp"
                 android:backgroundTint="#00FFFFFF" />
         </LinearLayout>
-
+    <FrameLayout
+        android:id="@+id/contenedorfragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,9 @@
     <string-array name="Opciones">
         <item> </item>
         <item>Cerrar sesion</item>
-        <item>Quienes somos</item>
+        <item>¿Quienes somos?</item>
         <item>Opciones</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

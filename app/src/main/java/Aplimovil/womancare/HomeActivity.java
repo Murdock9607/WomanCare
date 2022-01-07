@@ -2,25 +2,26 @@ package Aplimovil.womancare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     public Spinner menuSpinner;
+    FragmentTransaction transaction;
+    Fragment quienesSomos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,9 @@ public class HomeActivity extends AppCompatActivity {
         listaOpciones.add("Cerrar sesion");
         listaOpciones.add(("Quienes somos"));
         listaOpciones.add("Opciones");
+        quienesSomos = new quienesSomosFragment();
+
+        getSupportFragmentManager().beginTransaction().add(R.id.contenedorfragments,quienesSomos).commit();
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.Opciones, android.R.layout.simple_spinner_item);
@@ -46,6 +50,15 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(i);
                     parent.setSelection(0);
                 }
+                if(parent.getLastVisiblePosition()==2) {
+                    Toast.makeText(parent.getContext(),
+                            "Seleccionado: " + listaOpciones.get(1).toString(),
+                            Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), quienessomosActivity.class);
+                    startActivity(i);
+                    parent.setSelection(0);
+                }
+
             }
 
             @Override
