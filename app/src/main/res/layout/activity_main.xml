@@ -13,4 +13,12 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="163dp"
+        android:layout_height="88dp"
+        android:text="botonsalir"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="539dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
