@@ -10,6 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+    <HEAD
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
@@ -19,6 +20,16 @@
         android:layout_width="163dp"
         android:layout_height="88dp"
         android:text="botonsalir"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="539dp" />
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="524dp" /><![CDATA[
+
+
+
+    =======
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="278dp"
+        tools:srcCompat="@tools:sample/avatars" />
+>>>>>>> cdbecb18acf1ebe41aaa5ef1e324acf1d580a269
+
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

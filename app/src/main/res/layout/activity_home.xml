@@ -88,10 +88,11 @@
                 android:layout_height="248dp"
                 android:backgroundTint="#00FFFFFF" />
         </LinearLayout>
-    <FrameLayout
-        android:id="@+id/contenedorfragments"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp"/>
+
+        <FrameLayout
+            android:id="@+id/contenedorfragments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
