@@ -15,142 +15,131 @@
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="5dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        android:fontFamily="@font/montserrat"
-        android:text="¿Tu cabello es fácil de peinar?"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="237dp" />
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="383dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="224dp">
 
-    <Spinner
-        android:id="@+id/peinar"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="263dp" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="361dp"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Tu cabello es fácil de peinar?"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        android:fontFamily="@font/montserrat"
-        android:text="¿Cuál es el grosor de tu cabello?"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="288dp" />
+        <Spinner
+            android:id="@+id/peinar"
+            android:layout_width="361dp"
+            android:layout_height="26dp" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        android:fontFamily="@font/montserrat"
-        android:text="¿Cada cuánto te lavas el cabello?"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="340dp" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="361dp"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Cuál es el grosor de tu cabello?"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        android:fontFamily="@font/montserrat"
-        android:text="¿Qué estructura tiene tu cabello?"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="392dp" />
+        <Spinner
+            android:id="@+id/grosor"
+            android:layout_width="361dp"
+            android:layout_height="26dp" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        android:fontFamily="@font/montserrat"
-        android:text="¿Tienes algún tratamiento químico?"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="444dp" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="361dp"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Cada cuánto te lavas el cabello?"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        android:fontFamily="@font/montserrat"
-        android:text="¿Cómo sientes el cabello en este momento?"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="546dp" />
+        <Spinner
+            android:id="@+id/lavado"
+            android:layout_width="361dp"
+            android:layout_height="26dp" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        android:fontFamily="@font/montserrat"
-        android:text="¿Qué elementos usas con frecuencia?"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="496dp" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="361dp"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Qué estructura tiene tu cabello?"
+            android:textSize="16sp" />
 
-    <Spinner
-        android:id="@+id/grosor"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="314dp" />
+        <Spinner
+            android:id="@+id/estructura"
+            android:layout_width="361dp"
+            android:layout_height="26dp" />
 
-    <Spinner
-        android:id="@+id/lavado"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="366dp" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="361dp"
+            android:layout_height="26dp"
+            android:text="¿Tienes algún tratamiento químico?" />
 
-    <Spinner
-        android:id="@+id/estructura"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="418dp" />
+        <Spinner
+            android:id="@+id/tratamientoQ"
+            android:layout_width="361dp"
+            android:layout_height="26dp" />
 
-    <Spinner
-        android:id="@+id/elementos"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="522dp" />
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="361dp"
+            android:layout_height="26dp"
+            android:text="¿Qué elementos usas con frecuencia?" />
 
-    <Spinner
-        android:id="@+id/tratamientoQ"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="470dp" />
+        <Spinner
+            android:id="@+id/elementos"
+            android:layout_width="361dp"
+            android:layout_height="26dp" />
 
-    <Spinner
-        android:id="@+id/estado"
-        android:layout_width="361dp"
-        android:layout_height="26dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="572dp" />
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="361dp"
+            android:layout_height="26dp"
+            android:text="¿Cómo sientes el cabello en este momento?" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="41dp"
-        android:layout_height="35dp"
-        android:onClick="anterior"
-        android:text="Button"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="33dp"
-        tools:visibility="invisible" />
+        <Spinner
+            android:id="@+id/spinner14"
+            android:layout_width="361dp"
+            android:layout_height="26dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="152dp"
-        android:layout_height="40dp"
-        android:onClick="tipoCabello"
-        android:text="Button"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="34dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="41dp"
+            android:layout_height="35dp"
+            android:onClick="anterior"
+            android:text="Button"
+            tools:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
         tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="644dp"
-        tools:visibility="invisible" />
+        tools:layout_editor_absoluteY="637dp">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="tipoCabello"
+            android:text="Button"
+            android:visibility="invisible" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
