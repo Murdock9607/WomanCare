@@ -75,7 +75,8 @@
                 android:layout_width="328dp"
                 android:layout_height="256dp"
                 android:backgroundTint="#00FFFFFF"
-                android:drawableTint="#00FFFFFF" />
+                android:drawableTint="#00FFFFFF"
+                android:onClick="pantHair" />
 
             <Space
                 android:layout_width="match_parent"

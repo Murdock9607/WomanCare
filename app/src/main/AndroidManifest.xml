@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".tipoHair"
+            android:exported="false" />
+        <activity
+            android:name=".SkinCare1"
+            android:exported="false" />
+        <activity
+            android:name=".HairCare1"
+            android:exported="false" />
+        <activity
             android:name=".quienessomosActivity"
             android:exported="false" />
         <activity

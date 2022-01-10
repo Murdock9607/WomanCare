@@ -10,4 +10,67 @@
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="lavadoCa">
+        <item>Seleccione</item>
+        <item>2 días a la semana</item>
+        <item>Una vez a la semana</item>
+        <item>Todos los días</item>
+        <item>Dos veces a la semana</item>
+    </string-array>
+
+    <string-array name="Cepillar">
+        <item>Seleccione</item>
+        <item>Sí, siempre es fácil</item>
+        <item>A veces</item>
+        <item>No, es muy difícil</item>
+    </string-array>
+
+    <string-array name="Estructura">
+        <item>Seleccione</item>
+        <item>Ondulado</item>
+        <item>Liso</item>
+        <item>Crespo</item>
+    </string-array>
+
+    <string-array name="Grosor">
+        <item>Seleccione</item>
+        <item>Grueso</item>
+        <item>Normal</item>
+        <item>Delgado</item>
+    </string-array>
+
+    <string-array name="Tratamiento">
+        <item>Seleccione</item>
+        <item>Keratina</item>
+        <item>Tinte</item>
+        <item>Decoloraciones</item>
+        <item>Ninguna</item>
+        <item>Todas las anteriores</item>
+    </string-array>
+    <string-array name="ComoEsta">
+        <item>Seleccione</item>
+        <item>Opaco,seco</item>
+        <item>Puntas abiertas</item>
+        <item>Brillante y manejable</item>
+        <item>Mucho Frizz</item>
+        <item>Sano</item>
+    </string-array>
+    <string-array name="Elementos">
+        <item>Seleccione</item>
+        <item>Plancha</item>
+        <item>Secador</item>
+        <item>Ondas</item>
+        <item>Ninguna de las anteriores</item>
+    </string-array>
+    <string name="title_activity_hair_care_preguntas">HairCarePreguntas</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_hair_care">HairCare</string>
 </resources>
