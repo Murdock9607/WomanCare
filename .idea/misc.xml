@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_errorsuscripcion.xml" value="0.25" />
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_hair_care1.xml" value="0.11956521739130435" />
         <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_iniciarsesion.xml" value="0.12807377049180327" />
         <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_login.xml" value="0.15598290598290598" />
         <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_main.xml" value="0.12021857923497267" />
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_planes.xml" value="0.22" />
+        <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_quienessomos.xml" value="0.2028985507246377" />
         <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_quienessomos_activiti.xml" value="0.151268115942029" />
         <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_registrar.xml" value="0.22" />
         <entry key="..\:/00_Trabajos/Aplimovil/WomanCare/app/src/main/res/layout/activity_registro.xml" value="0.21" />
@@ -33,7 +37,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
