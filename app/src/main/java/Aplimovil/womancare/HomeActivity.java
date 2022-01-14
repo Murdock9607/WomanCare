@@ -73,12 +73,12 @@ public class HomeActivity extends AppCompatActivity {
         onBackPressed();
     }
     public void pantHair (View view){
-        Intent preguntasHC = new Intent(this,HairCare1.class);
+        Intent preguntasHC = new Intent(this,PreguntasCabello1.class);
         startActivity(preguntasHC);
     }
 
     public void pantSkin (View view){
-        Intent preguntasSC = new Intent(this,SkinCare1.class);
+        Intent preguntasSC = new Intent(this,PreguntasPiel1.class);
         startActivity(preguntasSC);
     }
 
