@@ -4,6 +4,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PreguntasPiel1">
+    android:background="@drawable/capturaskin"
+    tools:context=".PreguntasPiel1" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="213dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="63dp"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="atras" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="408dp"
+        android:layout_height="421dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Después de un tiempo de lavar tu cara, cómo la sientes? "
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/estadoPiel"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Los poros de tu piel son...?"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/poros"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Son habituales las imperfecciones en tu rostro?"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/imperfeccion"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Notas sequedad o tirantez en tu rostro?"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/sequedad"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="A la hora de tomar el sol tu piel..."
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/sol"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Cuántas veces al día lavas tu cara?"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/cuantasL"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:fontFamily="@font/montserrat"
+            android:text="¿Tu piel a primera vista es ...?"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/primera"
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="Resultado"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="133dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

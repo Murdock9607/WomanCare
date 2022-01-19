@@ -33,13 +33,14 @@
 
                 <Button
                     android:id="@+id/atrasBoton"
+                    style="@style/Widget.AppCompat.Button.Borderless"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
                     android:onClick="atras"
-                    android:text="Button"
-                    android:visibility="invisible"
-                    tools:visibility="invisible" />
+                    android:visibility="visible"
+                    tools:visibility="visible" />
             </LinearLayout>
 
         </LinearLayout>
