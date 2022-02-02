@@ -27,6 +27,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:backgroundTint="#00FFFFFF" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:translationY="585dp">
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="suscribe" />
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
