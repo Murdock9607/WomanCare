@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <FrameLayout
+        android:id="@+id/contenedorfragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
     <LinearLayout
         android:id="@+id/backgroundLayout"
         android:layout_width="391dp"
@@ -91,10 +98,5 @@
                 android:onClick="pantSkin" />
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/contenedorfragments"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

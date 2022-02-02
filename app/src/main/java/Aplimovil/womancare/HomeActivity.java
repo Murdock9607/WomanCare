@@ -14,14 +14,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     public Spinner menuSpinner;
-    FragmentTransaction transaction;
-    Fragment quienesSomos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         listaOpciones.add("Cerrar sesion");
         listaOpciones.add(("Quienes somos"));
         listaOpciones.add("Opciones");
-        quienesSomos = new quienesSomosFragment();
 
-        getSupportFragmentManager().beginTransaction().add(R.id.contenedorfragments,quienesSomos).commit();
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.Opciones, android.R.layout.simple_spinner_item);
@@ -41,6 +38,8 @@ public class HomeActivity extends AppCompatActivity {
         menuSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
                 if(parent.getLastVisiblePosition()==1) {
                     Toast.makeText(parent.getContext(),
                             "Seleccionado: " + listaOpciones.get(0).toString(),
@@ -56,8 +55,10 @@ public class HomeActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                     Intent i = new Intent(getApplicationContext(), quienessomosActivity.class);
                     startActivity(i);
+                    //transaction.replace(R.id.contenedorfragments, quienesSomos);
                     parent.setSelection(0);
                 }
+                //transaction.commit();
 
             }
 

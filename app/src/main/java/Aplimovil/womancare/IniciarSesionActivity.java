@@ -23,6 +23,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_AppCompat_DayNight_NoActionBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iniciarsesion);
         correou = findViewById(R.id.correoUsuario);
