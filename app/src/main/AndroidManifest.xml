@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".resultadosskin"
+            android:exported="false" />
+        <activity
             android:name=".PreguntasPiel1"
             android:exported="false" />
         <activity

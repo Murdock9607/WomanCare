@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.StringBufferInputStream;
@@ -16,6 +17,10 @@ import java.util.ArrayList;
 public class PreguntasPiel1 extends AppCompatActivity {
 
     Spinner estadoP, porosP, imperfeccionP, sequedadP, arrugasP, solP, cuantasP,primeraP;
+    int resultipo, inicioSeca=0, inicioNomal=0, inicioGrasa=0, contRespuestas=0;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +48,19 @@ public class PreguntasPiel1 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (parent.getLastVisiblePosition()==1||parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==4){
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: "+ parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+                    contRespuestas=contRespuestas+1;
+                }
+                if (parent.getLastVisiblePosition()==1)
+                {
+                    inicioSeca=inicioSeca+1;
+                }
+                if (parent.getLastVisiblePosition()==2)
+                {
+                    inicioGrasa=inicioGrasa+1;
+                }
+                if (parent.getLastVisiblePosition()==3)
+                {
+                    inicioNomal=inicioNomal+1;
                 }
             }
 
@@ -67,8 +83,19 @@ public class PreguntasPiel1 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (parent.getLastVisiblePosition()==1 || parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3) {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+                    contRespuestas=contRespuestas+1;
+                }
+                if (parent.getLastVisiblePosition()==1)
+                {
+                    inicioGrasa=inicioGrasa+1;
+                }
+                if (parent.getLastVisiblePosition()==2)
+                {
+                    inicioNomal=inicioNomal+1;
+                }
+                if (parent.getLastVisiblePosition()==3)
+                {
+                    inicioSeca=inicioSeca+1;
                 }
             }
 
@@ -92,8 +119,19 @@ public class PreguntasPiel1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (parent.getLastVisiblePosition()==1 || parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3)
                 {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+                    contRespuestas=contRespuestas+1;
+                }
+                if (parent.getLastVisiblePosition()==1)
+                {
+                    inicioGrasa=inicioGrasa+1;
+                }
+                if (parent.getLastVisiblePosition()==2)
+                {
+                    inicioSeca=inicioSeca+1;
+                }
+                if (parent.getLastVisiblePosition()==3)
+                {
+                    inicioNomal=inicioNomal+1;
                 }
             }
 
@@ -117,8 +155,19 @@ public class PreguntasPiel1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (parent.getLastVisiblePosition()==1|| parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3)
                 {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+                    contRespuestas=contRespuestas+1;
+                }
+                if (parent.getLastVisiblePosition()==1)
+                {
+                    inicioSeca=inicioSeca+1;
+                }
+                if (parent.getLastVisiblePosition()==2)
+                {
+                    inicioNomal=inicioNomal+1;
+                }
+                if (parent.getLastVisiblePosition()==3)
+                {
+                    inicioGrasa=inicioGrasa+1;
                 }
             }
 
@@ -142,10 +191,20 @@ public class PreguntasPiel1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (parent.getLastVisiblePosition()==1|| parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3)
                 {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+                    contRespuestas=contRespuestas+1;
                 }
-
+                if (parent.getLastVisiblePosition()==1)
+                {
+                    inicioNomal=inicioNomal+1;
+                }
+                if (parent.getLastVisiblePosition()==2)
+                {
+                    inicioSeca=inicioSeca+1;
+                }
+                if (parent.getLastVisiblePosition()==3)
+                {
+                    inicioGrasa=inicioGrasa+1;
+                }
             }
 
             @Override
@@ -168,10 +227,20 @@ public class PreguntasPiel1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (parent.getLastVisiblePosition()==1|| parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3)
                 {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+                    contRespuestas=contRespuestas+1;
                 }
-
+                if (parent.getLastVisiblePosition()==1)
+                {
+                    inicioSeca=inicioSeca+1;
+                }
+                if (parent.getLastVisiblePosition()==2)
+                {
+                    inicioGrasa=inicioGrasa+1;
+                }
+                if (parent.getLastVisiblePosition()==3)
+                {
+                    inicioNomal=inicioNomal+1;
+                }
             }
 
             @Override
@@ -194,8 +263,16 @@ public class PreguntasPiel1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (parent.getLastVisiblePosition()==1|| parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3)
                 {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+                    contRespuestas=contRespuestas+1;
+                }
+                if (parent.getLastVisiblePosition()==1) {
+                    inicioGrasa=inicioGrasa+1;
+                }
+                if (parent.getLastVisiblePosition()==2) {
+                    inicioSeca=inicioSeca+1;
+                }
+                if (parent.getLastVisiblePosition()==3) {
+                    inicioNomal=inicioNomal+1;
                 }
 
             }
@@ -204,16 +281,34 @@ public class PreguntasPiel1 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
+
         });
 
-        }
 
-        public void atras (View view){
+
+    }
+
+    public void atras (View view){
         onBackPressed();
     }
 
     public void Resultado (View view){
-        Intent ResultadHC = new Intent(this,tipoHair.class);
-        startActivity(ResultadHC);
+        if (inicioSeca>=4) {
+            resultipo = 1;
+        }
+
+        if (inicioGrasa>=4){
+            resultipo=2;
+        }
+
+        if (inicioNomal>=4){
+            resultipo=3;
+        }
+        if(contRespuestas>6) {
+            Intent ResultadoHS = new Intent(this, resultadosskin.class);
+            ResultadoHS.putExtra("resultipoenviar", resultipo);
+            startActivity(ResultadoHS);
+        }
     }
-    }
+
+}

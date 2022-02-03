@@ -16,8 +16,8 @@
         tools:layout_editor_absoluteY="1dp">
 
         <LinearLayout
-            android:layout_width="63dp"
-            android:layout_height="59dp"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
             android:orientation="horizontal">
 
             <Button
@@ -26,15 +26,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="#00FFFFFF"
-                android:onClick="atras" />
+                android:onClick="atras"
+                android:translationX="10dp"
+                android:translationY="10dp" />
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="408dp"
-        android:layout_height="421dp"
+        android:layout_width="405dp"
+        android:layout_height="483dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -130,15 +132,16 @@
             android:id="@+id/primera"
             android:layout_width="match_parent"
             android:layout_height="26dp" />
-    </LinearLayout>
 
-    <Button
-        android:id="@+id/button21"
-        android:layout_width="144dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#00FFFFFF"
-        android:onClick="Resultado"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        tools:layout_editor_absoluteX="133dp" />
+        <Button
+            android:id="@+id/button21"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="157dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="Resultado"
+            android:translationX="130dp"
+            android:translationY="60dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
