@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".IniciarSesionActivity"
+            android:exported="false" />
+        <activity
             android:name=".resultadosHair"
             android:exported="false" />
         <activity
@@ -39,7 +42,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".IniciarSesionActivity"
+            android:name=".comienzo"
             android:exported="true"
             android:theme="@style/splashScreen">
             <intent-filter>
