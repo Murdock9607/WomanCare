@@ -59,7 +59,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/idpeinar"
+                android:id="@+id/idlavado"
                 android:layout_width="match_parent"
                 android:layout_height="26dp" />
 
@@ -85,7 +85,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/idlavado"
+                android:id="@+id/idpeinar"
                 android:layout_width="match_parent"
                 android:layout_height="26dp" />
 

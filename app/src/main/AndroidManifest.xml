@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".resultadosHair"
+            android:exported="false" />
+        <activity
             android:name=".resultadosskin"
             android:exported="false" />
         <activity
@@ -25,9 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".planesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".tipoHair"
             android:exported="false" />
         <activity
             android:name=".quienessomosActivity"

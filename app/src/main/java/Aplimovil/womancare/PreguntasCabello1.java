@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 public class PreguntasCabello1 extends AppCompatActivity {
     Spinner CepilladoP,grueso,diasLavado,estructuraC,tratamientoC,instrumentosC,ahoraC;
+    int resulCabello, inicioSeco=0, inicioNormal=0, inicioGraso=0, contCabello=0,maltratado=0,muyMalt=0,sano=0,resulCu;
 
 
     @Override
@@ -35,7 +36,6 @@ public class PreguntasCabello1 extends AppCompatActivity {
         lavadoList.add("2 días a la semana");
         lavadoList.add("Una vez a la semana");
         lavadoList.add("Todos los días");
-        lavadoList.add("Día de por medio");
 
         ArrayAdapter<CharSequence> adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, lavadoList);
         diasLavado.setAdapter(adapter);
@@ -43,10 +43,22 @@ public class PreguntasCabello1 extends AppCompatActivity {
         diasLavado.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
            @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-               if(parent.getLastVisiblePosition()==1 || parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3 || parent.getLastVisiblePosition()==4) {
-                   Toast.makeText(parent.getContext(),
-                           "Seleccionado: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+               if (parent.getLastVisiblePosition()==1||parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3){
+                   contCabello=contCabello+1;
                }
+               if (parent.getLastVisiblePosition()==1)
+               {
+                   inicioNormal=inicioNormal+1;
+               }
+               if (parent.getLastVisiblePosition()==2)
+               {
+                   inicioSeco=inicioSeco+1;
+               }
+               if (parent.getLastVisiblePosition()==3)
+               {
+                   inicioGraso=inicioGraso+1;
+               }
+
 
     }
 
@@ -67,9 +79,20 @@ public class PreguntasCabello1 extends AppCompatActivity {
         CepilladoP.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(parent.getLastVisiblePosition()==1 || parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3) {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+                if (parent.getLastVisiblePosition()==1||parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==4){
+                    contCabello=contCabello+1;
+                }
+                if (parent.getLastVisiblePosition()==1)
+                {
+                    inicioGraso=inicioGraso+1;
+                }
+                if (parent.getLastVisiblePosition()==2)
+                {
+                    inicioNormal=inicioNormal+1;
+                }
+                if (parent.getLastVisiblePosition()==3)
+                {
+                    inicioSeco=inicioSeco+1;
                 }
             }
 
@@ -91,8 +114,7 @@ public class PreguntasCabello1 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(parent.getLastVisiblePosition()==1 || parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3) {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+                    contCabello=contCabello+1;
                 }
             }
 
@@ -114,8 +136,7 @@ public class PreguntasCabello1 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(parent.getLastVisiblePosition()==1 || parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3) {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+                    contCabello=contCabello+1;
                 }
             }
 
@@ -141,16 +162,24 @@ public class PreguntasCabello1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(parent.getLastVisiblePosition()==1 ||parent.getLastVisiblePosition()==2 ||parent.getLastVisiblePosition()==3
                         || parent.getLastVisiblePosition()==4 || parent.getLastVisiblePosition()==5 || parent.getLastVisiblePosition()==6) {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+                    contCabello=contCabello+1;
+                    }
+                if (parent.getLastVisiblePosition()==1||parent.getLastVisiblePosition()==2||parent.getLastVisiblePosition()==3||parent.getLastVisiblePosition()==4)
+                {
+                    maltratado=maltratado+1;
+                }
+                if (parent.getLastVisiblePosition()==5)
+                {
+                    sano=sano+1;
+                }
+                if (parent.getLastVisiblePosition()==6)
+                {
+                    muyMalt=muyMalt+1;
                 }
 
             }
-
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
+            public void onNothingSelected(AdapterView<?> parent) { }
         });
         ArrayList<String> estadoList=new ArrayList<String>();
         estadoList.add("Seleccione");
@@ -167,15 +196,23 @@ public class PreguntasCabello1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(parent.getLastVisiblePosition()==1 || parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3
                         || parent.getLastVisiblePosition()==4 || parent.getLastVisiblePosition()==5) {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+                    contCabello=contCabello+1; }
+                if (parent.getLastVisiblePosition()==1||parent.getLastVisiblePosition()==2)
+                {
+                    inicioSeco=inicioSeco+1;
+                }
+                if (parent.getLastVisiblePosition()==4||parent.getLastVisiblePosition()==5)
+                {
+                    inicioNormal=inicioNormal+1;
+                }
+                if (parent.getLastVisiblePosition()==3)
+                {
+                    inicioGraso=inicioGraso+1;
                 }
 
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
 
@@ -192,10 +229,16 @@ public class PreguntasCabello1 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(parent.getLastVisiblePosition()==1 ||parent.getLastVisiblePosition()==2 || parent.getLastVisiblePosition()==3 || parent.getLastVisiblePosition()== 4) {
-                    Toast.makeText(parent.getContext(),
-                            "Seleccionado: " + parent.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+                    contCabello=contCabello+1;
                 }
-
+                if (parent.getLastVisiblePosition()==1||parent.getLastVisiblePosition()==2||parent.getLastVisiblePosition()==3)
+                {
+                    maltratado=maltratado+1;
+                }
+                if (parent.getLastVisiblePosition()==4)
+                {
+                    sano=sano+1;
+                }
             }
 
             @Override
@@ -209,7 +252,42 @@ public class PreguntasCabello1 extends AppCompatActivity {
     }
 
     public void Resultado (View view){
-        Intent ResultadHC = new Intent(this,tipoHair.class);
-        startActivity(ResultadHC);
+        if (inicioSeco>=2) {
+            resulCabello = 1;
+        }
+
+        if (inicioGraso>=2){
+            resulCabello=2;
+        }
+
+        if (inicioNormal>=2){
+            resulCabello=3;
+        }
+
+        if (maltratado>2)
+        {
+            resulCu=1;
+        }
+        if (muyMalt==1)
+        {
+            resulCu=1;
+        }
+        if (maltratado>=1  && sano==1)
+        {
+            resulCu=2;
+        }
+        if (sano==2)
+        {
+            resulCu=3;
+        }
+
+        if(contCabello>6) {
+            Intent ResultadHC = new Intent(this,resultadosHair.class);
+            ResultadHC.putExtra("resultipoenviar", resulCabello);
+            ResultadHC.putExtra("cuidadotipoenviar",resulCu);
+            startActivity(ResultadHC);
+        }
+
     }
+
 }
