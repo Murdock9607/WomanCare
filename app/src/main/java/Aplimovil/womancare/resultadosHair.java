@@ -51,7 +51,6 @@ public class resultadosHair extends AppCompatActivity {
         if (resulCabello==2 && resulCu==2){
             Resultado.setText("Graso Maltratado");
             imagResult.setImageDrawable(getResources().getDrawable(R.drawable.graso));
-
         }
 
         if (resulCabello==2 && resulCu==3){

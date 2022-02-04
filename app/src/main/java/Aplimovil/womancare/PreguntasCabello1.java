@@ -281,13 +281,11 @@ public class PreguntasCabello1 extends AppCompatActivity {
             resulCu=3;
         }
 
-        if(contCabello>6) {
+        if(contCabello>5) {
             Intent ResultadHC = new Intent(this,resultadosHair.class);
             ResultadHC.putExtra("resultipoenviar", resulCabello);
             ResultadHC.putExtra("cuidadotipoenviar",resulCu);
             startActivity(ResultadHC);
         }
-
     }
-
 }
