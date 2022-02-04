@@ -17,7 +17,7 @@ public class planesActivity extends AppCompatActivity {
         onBackPressed();
     }
     public void results (View view){
-        Intent i = new Intent(getApplicationContext(), planesActivity.class);
+        Intent i = new Intent(getApplicationContext(), HomeActivity.class);
         startActivity(i);
     }
 }
